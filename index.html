@@ -1,0 +1,1372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Openn | Slim Leather Wallets & Everyday Carry Essentials</title>
+
+<!-- ============ SEO ============ -->
+<meta name="description" content="Openn makes slim, full-grain leather wallets, card holders, belts, keychains, passport holders and watch straps — RFID-shielded, hand-stitched, built to last.">
+<meta name="keywords" content="leather wallets, slim wallet, card holder, leather belt, keychain, passport holder, watch strap, RFID wallet, everyday carry">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#0a0c10">
+<link rel="canonical" href="https://www.openn.com/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Openn">
+<meta property="og:title" content="Openn | Slim Leather Wallets & Everyday Carry Essentials">
+<meta property="og:description" content="Slim, full-grain leather wallets, card holders, belts, keychains, passport holders and watch straps — RFID-shielded and hand-stitched.">
+<meta property="og:image" content="https://www.openn.com/assets/wallet-hero.jpg">
+<meta property="og:url" content="https://www.openn.com/">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Openn | Slim Leather Wallets & Everyday Carry Essentials">
+<meta name="twitter:description" content="Slim, full-grain leather wallets, card holders, belts, keychains, passport holders and watch straps — RFID-shielded and hand-stitched.">
+<meta name="twitter:image" content="https://www.openn.com/assets/wallet-hero.jpg">
+
+<!-- Favicon (inline, no extra file needed) -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231f2c4e'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-style='italic' font-size='32' fill='%23efebe2' text-anchor='middle'%3EO%3C/text%3E%3C/svg%3E">
+
+<!-- Structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Openn",
+  "url": "https://www.openn.com/",
+  "description": "Openn makes slim, full-grain leather and ballistic-weave everyday carry: wallets, card holders, belts, keychains, passport holders and watch straps.",
+  "brand": { "@type": "Brand", "name": "Openn" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Openn Wallet",
+  "description": "Six-slot slim bifold wallet cut from navy ballistic-weave canvas with a brushed suede center band, hand-stitched and embossed with the Openn mark.",
+  "brand": { "@type": "Brand", "name": "Openn" },
+  "image": "https://www.openn.com/assets/wallet-hero.jpg",
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "USD",
+    "price": "68.00",
+    "availability": "https://schema.org/InStock"
+  }
+}
+</script>
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+/* =========================================================
+   OPENN — Everyday carry, in leather and ballistic weave
+   Stylesheet
+   ========================================================= */
+
+/* ---------- Fonts ----------
+   Fraunces  → display serif, used sparingly for headlines
+   Manrope   → workhorse sans, nav / body / UI
+*/
+
+/* ---------- Design tokens ---------- */
+:root{
+  /* colour */
+  --ink:        #0a0c10;   /* page background            */
+  --ink-elev:   #14171f;   /* raised panels / cards        */
+  --ink-elev-2: #1b1f29;   /* hover state on panels        */
+  --line:       rgba(239,235,226,0.09);
+  --line-strong:rgba(239,235,226,0.16);
+
+  --navy:       #1f2c4e;   /* brand navy (from the wallet) */
+  --navy-deep:  #121b33;
+  --navy-mid:   #2c3d68;
+
+  --stone:      #b7b0a0;   /* the suede band accent        */
+  --stone-light:#dad4c5;
+  --stone-dark: #8c8674;
+
+  --cream:      #efebe2;   /* primary text on dark         */
+  --muted:      #9aa2b8;   /* secondary text on dark       */
+
+  /* type */
+  --font-display: "Fraunces", "Iowan Old Style", "Palatino Linotype", serif;
+  --font-body: "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  --fs-eyebrow: 0.75rem;
+  --fs-small:   0.9rem;
+  --fs-body:    clamp(1rem, 0.35vw + 0.92rem, 1.125rem);
+  --fs-lead:    clamp(1.125rem, 0.6vw + 1rem, 1.375rem);
+  --fs-h3:      clamp(1.3rem, 1vw + 1rem, 1.75rem);
+  --fs-h2:      clamp(2.1rem, 2.6vw + 1.2rem, 3.4rem);
+  --fs-h1:      clamp(2.7rem, 5vw + 1rem, 5.4rem);
+
+  /* layout */
+  --gutter:      clamp(1.25rem, 4vw, 3rem);
+  --section-pad: clamp(3.5rem, 8vw, 7.5rem);
+  --radius-sm:   10px;
+  --radius-md:   18px;
+  --radius-lg:   28px;
+  --max:         1240px;
+
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* ---------- Reset ---------- */
+*, *::before, *::after{ box-sizing: border-box; }
+html{ -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+body{
+  margin: 0;
+  background: var(--ink);
+  color: var(--cream);
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  line-height: 1.55;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+img{ max-width: 100%; display: block; }
+ul{ list-style: none; margin: 0; padding: 0; }
+a{ color: inherit; text-decoration: none; }
+button{ font: inherit; color: inherit; background: none; border: 0; cursor: pointer; }
+h1, h2, h3, p{ margin: 0; }
+svg{ display: block; }
+
+section{ scroll-margin-top: 88px; }
+
+/* Visually-hidden but accessible */
+.sr-only{
+  position: absolute; width: 1px; height: 1px;
+  padding: 0; margin: -1px; overflow: hidden;
+  clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+}
+
+.skip-link{
+  position: absolute;
+  left: 1rem; top: -3rem;
+  background: var(--stone-light);
+  color: var(--navy-deep);
+  padding: 0.75rem 1.25rem;
+  border-radius: var(--radius-sm);
+  font-weight: 700;
+  z-index: 999;
+  transition: top 0.2s var(--ease);
+}
+.skip-link:focus{ top: 1rem; }
+
+:focus-visible{
+  outline: 2px solid var(--stone-light);
+  outline-offset: 3px;
+}
+
+/* ---------- Layout helpers ---------- */
+.wrap{
+  max-width: var(--max);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+.eyebrow{
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6em;
+  font-size: var(--fs-eyebrow);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--stone);
+  font-weight: 700;
+}
+.eyebrow::before{
+  content: "";
+  width: 1.6em;
+  height: 1px;
+  background: var(--stone-dark);
+}
+.section-head{
+  max-width: 640px;
+  margin-bottom: clamp(2.5rem, 5vw, 4rem);
+}
+.section-head h2{
+  font-family: var(--font-display);
+  font-weight: 500;
+  color: var(--stone-light);
+  margin-top: 0.75rem;
+  line-height: 1.08;
+}
+.section-head p{
+  margin-top: 1rem;
+  color: var(--muted);
+  font-size: var(--fs-lead);
+  max-width: 46ch;
+}
+
+/* ---------- Buttons ---------- */
+.btn{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 0.95rem 1.7rem;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: var(--fs-small);
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+  min-height: 48px;
+  transition: transform 0.35s var(--ease), background-color 0.3s var(--ease), border-color 0.3s var(--ease), color 0.3s var(--ease);
+}
+.btn-primary{
+  background: var(--stone-light);
+  color: var(--navy-deep);
+}
+.btn-primary:hover{ background: var(--cream); transform: translateY(-2px); }
+.btn-primary:active{ transform: translateY(0); }
+
+.btn-outline{
+  border: 1px solid var(--line-strong);
+  color: var(--cream);
+}
+.btn-outline:hover{
+  border-color: var(--stone);
+  background: rgba(239,235,226,0.06);
+  transform: translateY(-2px);
+}
+
+.btn-arrow{ transition: transform 0.3s var(--ease); }
+.btn:hover .btn-arrow{ transform: translateX(3px); }
+
+/* =========================================================
+   HEADER / NAV
+   ========================================================= */
+.site-header{
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding-block: 1.35rem;
+  transition: padding 0.4s var(--ease), background-color 0.4s var(--ease), box-shadow 0.4s var(--ease), backdrop-filter 0.4s var(--ease);
+}
+.site-header::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(10,12,16,0);
+  backdrop-filter: blur(0px);
+  transition: background-color 0.4s var(--ease), backdrop-filter 0.4s var(--ease);
+  z-index: -1;
+}
+.site-header.is-scrolled{
+  padding-block: 0.85rem;
+  box-shadow: 0 1px 0 var(--line);
+}
+.site-header.is-scrolled::before{
+  background: rgba(10,12,16,0.82);
+  backdrop-filter: blur(14px);
+}
+
+.nav-row{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.logo{
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1.6rem;
+  color: var(--cream);
+  letter-spacing: 0.01em;
+}
+.logo span{ color: var(--stone); font-style: normal; }
+
+.nav-menu{
+  display: flex;
+  align-items: center;
+  gap: clamp(1.1rem, 2vw, 2.1rem);
+  font-size: var(--fs-small);
+  font-weight: 600;
+}
+.nav-menu a{
+  position: relative;
+  padding-block: 0.3rem;
+  color: var(--cream);
+  opacity: 0.85;
+  transition: opacity 0.25s var(--ease);
+}
+.nav-menu a::after{
+  content: "";
+  position: absolute;
+  left: 0; right: 0; bottom: -2px;
+  height: 1px;
+  background: var(--stone-light);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.35s var(--ease);
+}
+.nav-menu a:hover{ opacity: 1; }
+.nav-menu a:hover::after{ transform: scaleX(1); transform-origin: left; }
+
+.nav-cta{ display: flex; align-items: center; gap: 1rem; }
+
+.nav-toggle{
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+}
+.nav-toggle span{
+  width: 20px;
+  height: 1.5px;
+  background: var(--cream);
+  margin-inline: auto;
+  transition: transform 0.35s var(--ease), opacity 0.25s var(--ease);
+}
+.nav-toggle[aria-expanded="true"] span:nth-child(1){ transform: translateY(6.5px) rotate(45deg); }
+.nav-toggle[aria-expanded="true"] span:nth-child(2){ opacity: 0; }
+.nav-toggle[aria-expanded="true"] span:nth-child(3){ transform: translateY(-6.5px) rotate(-45deg); }
+
+/* =========================================================
+   HERO
+   ========================================================= */
+.hero{
+  position: relative;
+  padding-top: clamp(2rem, 6vw, 4rem);
+  padding-bottom: clamp(3rem, 7vw, 5rem);
+  overflow: clip;
+}
+.hero-glow{
+  position: absolute;
+  inset: -10% -10% auto -10%;
+  height: 620px;
+  background:
+    radial-gradient(60% 60% at 30% 20%, rgba(31,44,78,0.55), transparent 70%),
+    radial-gradient(45% 45% at 78% 10%, rgba(183,176,160,0.14), transparent 70%);
+  filter: blur(10px);
+  z-index: -1;
+  animation: drift 16s ease-in-out infinite alternate;
+}
+.hero-beams{
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  opacity: 0.5;
+  background: repeating-linear-gradient(
+    100deg,
+    rgba(239,235,226,0.035) 0px,
+    rgba(239,235,226,0.035) 2px,
+    transparent 2px,
+    transparent 90px
+  );
+  mask-image: radial-gradient(60% 70% at 25% 15%, black, transparent 75%);
+}
+@keyframes drift{
+  from{ transform: translate3d(0,0,0) scale(1); }
+  to{ transform: translate3d(-2%, 2%, 0) scale(1.05); }
+}
+
+.hero-grid{
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  align-items: center;
+  gap: clamp(2rem, 5vw, 4rem);
+}
+
+.hero-copy .eyebrow{ margin-bottom: 1.25rem; }
+.hero-copy h1{
+  font-family: var(--font-display);
+  font-weight: 500;
+  color: var(--cream);
+  line-height: 1.02;
+}
+.hero-copy h1 em{
+  font-style: italic;
+  color: var(--stone-light);
+}
+.hero-copy .lead{
+  margin-top: 1.5rem;
+  max-width: 46ch;
+  color: var(--muted);
+  font-size: var(--fs-lead);
+}
+.hero-ctas{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2.25rem;
+}
+.hero-meta{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem 1.6rem;
+  margin-top: 2.25rem;
+  padding-top: 1.75rem;
+  border-top: 1px solid var(--line);
+  font-size: var(--fs-small);
+  color: var(--muted);
+}
+.hero-meta li{ display: flex; align-items: center; gap: 0.55rem; }
+.hero-meta svg{ width: 15px; height: 15px; color: var(--stone); flex-shrink: 0; }
+
+.hero-art{ position: relative; perspective: 1200px; }
+.hero-frame{
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transform-style: preserve-3d;
+  will-change: transform;
+  transition: transform 0.4s var(--ease);
+  box-shadow: 0 40px 80px -30px rgba(0,0,0,0.7);
+}
+.hero-frame img{ width: 100%; height: 100%; object-fit: cover; }
+.hero-tag{
+  position: absolute;
+  left: 1.25rem;
+  bottom: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: rgba(10,12,16,0.55);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--line-strong);
+  padding: 0.65rem 1rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--stone-light);
+  transform: translateZ(40px);
+}
+.hero-tag .dot{
+  width: 7px; height: 7px; border-radius: 50%;
+  background: var(--stone-light);
+  box-shadow: 0 0 0 4px rgba(183,176,160,0.18);
+}
+
+/* =========================================================
+   FEATURE BAND (signature stone strip)
+   ========================================================= */
+.band{
+  position: relative;
+  background: var(--stone);
+  color: var(--navy-deep);
+  padding-block: clamp(1.5rem, 3vw, 2rem);
+}
+.band::before, .band::after{
+  content: "";
+  position: absolute;
+  left: 0; right: 0;
+  height: 0;
+  border-top: 1px dashed rgba(18,27,51,0.35);
+}
+.band::before{ top: 6px; }
+.band::after{ bottom: 6px; }
+
+.band-row{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+.band-item{
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-weight: 700;
+  font-size: 0.92rem;
+}
+.band-item svg{ width: 22px; height: 22px; flex-shrink: 0; }
+
+/* =========================================================
+   FLAGSHIP (Wallets)
+   ========================================================= */
+.flagship{ padding-block: var(--section-pad); }
+.flagship-grid{
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: clamp(2rem, 5vw, 4.5rem);
+  align-items: center;
+}
+.zoom-frame{
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  aspect-ratio: 1 / 1.02;
+  cursor: zoom-in;
+  background: var(--ink-elev);
+  box-shadow: 0 30px 60px -25px rgba(0,0,0,0.65);
+}
+.zoom-frame img{
+  width: 100%; height: 100%; object-fit: cover;
+  transform-origin: var(--ox, 50%) var(--oy, 50%);
+  transition: transform 0.45s var(--ease);
+}
+.zoom-frame:hover img{ transform: scale(1.22); }
+
+.flagship-num{
+  font-family: var(--font-display);
+  font-style: italic;
+  color: var(--stone-dark);
+  font-size: 1rem;
+}
+.flagship-copy h2{
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: var(--fs-h2);
+  color: var(--stone-light);
+  margin-top: 0.6rem;
+  line-height: 1.05;
+}
+.flagship-copy p{
+  margin-top: 1.25rem;
+  color: var(--muted);
+  font-size: var(--fs-lead);
+  max-width: 50ch;
+}
+
+.spec-list{
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem 2rem;
+  padding-top: 1.75rem;
+  border-top: 1px solid var(--line);
+}
+.spec-list dt{
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--stone-dark);
+  font-weight: 700;
+}
+.spec-list dd{
+  margin: 0.35rem 0 0;
+  font-weight: 600;
+  color: var(--cream);
+}
+
+.flagship-buy{
+  margin-top: 2.25rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+.price{
+  font-family: var(--font-display);
+  font-size: 1.9rem;
+  color: var(--stone-light);
+}
+.price span{
+  display: block;
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  color: var(--muted);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* =========================================================
+   COLLECTION GRID
+   ========================================================= */
+.collection{ padding-bottom: var(--section-pad); }
+.collection-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+.card{
+  position: relative;
+  border-radius: var(--radius-md);
+  background: var(--ink-elev);
+  border: 1px solid var(--line);
+  padding: 2rem 1.75rem 1.75rem;
+  overflow: hidden;
+  isolation: isolate;
+  transition: transform 0.45s var(--ease), border-color 0.45s var(--ease), background-color 0.45s var(--ease);
+}
+.card::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(220px circle at var(--mx, 50%) var(--my, 50%), rgba(183,176,160,0.14), transparent 60%);
+  opacity: 0;
+  transition: opacity 0.4s var(--ease);
+  z-index: -1;
+}
+.card:hover{
+  transform: translateY(-6px);
+  border-color: var(--line-strong);
+  background: var(--ink-elev-2);
+}
+.card:hover::before{ opacity: 1; }
+
+.card-band{
+  position: absolute;
+  left: 0; right: 0; top: 0;
+  height: 4px;
+  background: var(--stone);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s var(--ease);
+}
+.card:hover .card-band{ transform: scaleX(1); }
+
+.card-icon{
+  width: 52px; height: 52px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  background: var(--navy);
+  color: var(--stone-light);
+  transition: transform 0.45s var(--ease), background-color 0.45s var(--ease);
+}
+.card-icon svg{ width: 24px; height: 24px; }
+.card:hover .card-icon{ transform: scale(1.08) rotate(-4deg); background: var(--navy-mid); }
+
+.card h3{
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: var(--fs-h3);
+  color: var(--stone-light);
+  margin-top: 1.35rem;
+}
+.card p{
+  margin-top: 0.6rem;
+  color: var(--muted);
+  font-size: var(--fs-small);
+  max-width: 34ch;
+}
+.card-link{
+  margin-top: 1.4rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 700;
+  font-size: var(--fs-small);
+  color: var(--cream);
+}
+.card-link svg{ width: 15px; height: 15px; transition: transform 0.3s var(--ease); }
+.card:hover .card-link svg{ transform: translateX(4px); }
+
+.card--wide{ grid-column: span 3; }
+
+/* =========================================================
+   CRAFT / MATERIALS
+   ========================================================= */
+.craft{ padding-block: var(--section-pad); background: var(--ink-elev); }
+.craft-grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: clamp(1.5rem, 4vw, 3rem);
+}
+.swatch{
+  border-radius: var(--radius-md);
+  border: 1px solid var(--line);
+  padding: clamp(1.75rem, 3vw, 2.5rem);
+  overflow: hidden;
+  position: relative;
+}
+.swatch-tile{
+  height: 150px;
+  border-radius: var(--radius-sm);
+  margin-bottom: 1.5rem;
+  transition: transform 0.6s var(--ease);
+}
+.swatch:hover .swatch-tile,
+.swatch.is-active .swatch-tile{ transform: scale(1.06); }
+
+.swatch-tile.weave{
+  background-color: var(--navy);
+  background-image:
+    repeating-linear-gradient(45deg, rgba(239,235,226,0.09) 0, rgba(239,235,226,0.09) 1px, transparent 1px, transparent 6px),
+    repeating-linear-gradient(-45deg, rgba(0,0,0,0.25) 0, rgba(0,0,0,0.25) 1px, transparent 1px, transparent 6px);
+}
+.swatch-tile.suede{
+  background-color: var(--stone);
+  background-image:
+    radial-gradient(rgba(0,0,0,0.08) 1px, transparent 1px),
+    radial-gradient(rgba(255,255,255,0.12) 1px, transparent 1px);
+  background-size: 6px 6px, 9px 9px;
+  background-position: 0 0, 3px 4px;
+}
+.swatch h3{
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: var(--fs-h3);
+  color: var(--stone-light);
+}
+.swatch p{
+  margin-top: 0.75rem;
+  color: var(--muted);
+}
+
+/* =========================================================
+   TESTIMONIALS
+   ========================================================= */
+.reviews{ padding-block: var(--section-pad); }
+.reviews-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+.review{
+  padding: 2rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--line);
+  transition: transform 0.4s var(--ease), border-color 0.4s var(--ease);
+}
+.review:hover{ transform: translateY(-4px); border-color: var(--line-strong); }
+.review-stars{ display: flex; gap: 0.25rem; color: var(--stone); margin-bottom: 1.1rem; }
+.review-stars svg{ width: 16px; height: 16px; }
+.review p{ font-size: var(--fs-lead); color: var(--cream); line-height: 1.5; }
+.review cite{
+  display: block;
+  margin-top: 1.25rem;
+  font-style: normal;
+  font-size: var(--fs-small);
+  color: var(--muted);
+  font-weight: 700;
+}
+
+/* =========================================================
+   CTA BANNER
+   ========================================================= */
+.cta-banner{
+  margin-inline: var(--gutter);
+  margin-bottom: var(--section-pad);
+  border-radius: var(--radius-lg);
+  background: linear-gradient(135deg, var(--navy-deep), var(--navy));
+  padding: clamp(2.5rem, 6vw, 5rem);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.cta-banner::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(50% 80% at 50% 0%, rgba(183,176,160,0.16), transparent 70%);
+}
+.cta-banner h2{
+  position: relative;
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: var(--fs-h2);
+  color: var(--cream);
+  max-width: 20ch;
+  margin-inline: auto;
+  line-height: 1.08;
+}
+.cta-banner p{
+  position: relative;
+  margin-top: 1rem;
+  color: var(--muted);
+  font-size: var(--fs-lead);
+}
+.cta-banner .btn{ position: relative; margin-top: 2rem; }
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+.site-footer{
+  border-top: 3px solid var(--stone);
+  position: relative;
+  padding-top: clamp(3rem, 6vw, 4.5rem);
+}
+.site-footer::before{
+  content: "";
+  position: absolute;
+  left: 0; right: 0; top: -4px;
+  height: 0;
+  border-top: 1px dashed rgba(10,12,16,0.5);
+}
+.footer-grid{
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1fr;
+  gap: 2.5rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid var(--line);
+}
+.footer-brand .logo{ font-size: 1.7rem; }
+.footer-brand p{
+  margin-top: 1rem;
+  color: var(--muted);
+  max-width: 32ch;
+  font-size: var(--fs-small);
+}
+.footer-social{
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+.footer-social a{
+  width: 40px; height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--line-strong);
+  display: flex; align-items: center; justify-content: center;
+  transition: border-color 0.3s var(--ease), background-color 0.3s var(--ease), transform 0.3s var(--ease);
+}
+.footer-social a:hover{
+  border-color: var(--stone);
+  background: rgba(183,176,160,0.1);
+  transform: translateY(-3px);
+}
+.footer-social svg{ width: 17px; height: 17px; color: var(--stone-light); }
+
+.footer-col h4{
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--stone-dark);
+  font-weight: 700;
+}
+.footer-col ul{ margin-top: 1.25rem; display: flex; flex-direction: column; gap: 0.85rem; }
+.footer-col a{
+  color: var(--muted);
+  font-size: var(--fs-small);
+  transition: color 0.25s var(--ease);
+}
+.footer-col a:hover{ color: var(--cream); }
+
+.footer-bottom{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-block: 1.75rem;
+  font-size: 0.8rem;
+  color: var(--stone-dark);
+}
+.footer-bottom ul{ display: flex; gap: 1.5rem; }
+.footer-bottom a:hover{ color: var(--muted); }
+
+/* =========================================================
+   SCROLL REVEAL
+   ========================================================= */
+.reveal{
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.8s var(--ease), transform 0.8s var(--ease);
+}
+.reveal.in-view{ opacity: 1; transform: translateY(0); }
+.reveal-stagger.in-view > *{ transition-delay: calc(var(--i, 0) * 90ms); }
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+@media (max-width: 1024px){
+  .hero-grid{ grid-template-columns: 1fr; }
+  .hero-art{ order: -1; max-width: 460px; margin-inline: auto; }
+  .flagship-grid{ grid-template-columns: 1fr; }
+  .flagship-art{ max-width: 460px; margin-inline: auto; }
+  .collection-grid{ grid-template-columns: repeat(2, 1fr); }
+  .card--wide{ grid-column: span 2; }
+  .craft-grid{ grid-template-columns: 1fr; }
+  .reviews-grid{ grid-template-columns: 1fr; }
+  .footer-grid{ grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 880px){
+  .nav-menu{
+    position: absolute;
+    left: 0; right: 0; top: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    background: rgba(10,12,16,0.98);
+    border-bottom: 1px solid var(--line);
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.4s var(--ease), opacity 0.3s var(--ease);
+  }
+  .nav-menu.is-open{ max-height: 420px; opacity: 1; }
+  .nav-menu li{ width: 100%; }
+  .nav-menu a{
+    display: block;
+    width: 100%;
+    padding: 1.1rem var(--gutter);
+    border-top: 1px solid var(--line);
+  }
+  .nav-menu a::after{ display: none; }
+  .nav-cta .btn-outline{ display: none; }
+  .nav-toggle{ display: flex; }
+  .band-row{ grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 720px){
+  .band-row{ grid-template-columns: 1fr 1fr; gap: 1.25rem 1rem; }
+  .band-item{ font-size: 0.82rem; }
+  .spec-list{ grid-template-columns: 1fr 1fr; }
+  .footer-grid{ grid-template-columns: 1fr 1fr; gap: 2rem 1.5rem; }
+}
+
+@media (max-width: 600px){
+  .collection-grid{
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 1rem;
+    margin-inline: calc(var(--gutter) * -1);
+    padding-inline: var(--gutter);
+    padding-bottom: 0.5rem;
+  }
+  .collection-grid::-webkit-scrollbar{ display: none; }
+  .card{
+    scroll-snap-align: start;
+    min-width: 78%;
+  }
+  .card--wide{ min-width: 78%; }
+  .hero-ctas .btn,
+  .cta-banner .btn{ width: 100%; }
+  .hero-ctas{ flex-direction: column; }
+  .footer-grid{ grid-template-columns: 1fr; }
+  .footer-bottom{ flex-direction: column; align-items: flex-start; }
+}
+
+/* ---------- Reduced motion ---------- */
+@media (prefers-reduced-motion: reduce){
+  *, *::before, *::after{
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+  .reveal{ opacity: 1; transform: none; }
+  .hero-frame{ transform: none !important; }
+}
+
+</style>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ============ ICON LIBRARY (hidden, reused via <use>) ============ -->
+<svg class="sr-only" width="0" height="0">
+  <defs>
+    <symbol id="i-wallet" viewBox="0 0 48 48"><rect x="6" y="12" width="36" height="26" rx="4"/><path d="M6 20h36"/><circle cx="33" cy="24" r="1.4" fill="currentColor" stroke="none"/></symbol>
+    <symbol id="i-card" viewBox="0 0 48 48"><rect x="9" y="16" width="30" height="21" rx="4"/><path d="M14 12h20M17 8h14"/></symbol>
+    <symbol id="i-belt" viewBox="0 0 48 48"><path d="M4 24c8-10 32-10 40 0"/><rect x="19" y="18" width="10" height="12" rx="2"/><circle cx="24" cy="24" r="1.4" fill="currentColor" stroke="none"/></symbol>
+    <symbol id="i-keychain" viewBox="0 0 48 48"><circle cx="18" cy="16" r="8"/><path d="M24 21l12 12M31 28l5 5M36 23l5 5"/></symbol>
+    <symbol id="i-passport" viewBox="0 0 48 48"><rect x="10" y="7" width="24" height="34" rx="3"/><circle cx="22" cy="21" r="5"/><path d="M16 32h12"/></symbol>
+    <symbol id="i-watch" viewBox="0 0 48 48"><rect x="15" y="17" width="18" height="14" rx="3"/><path d="M18 17V9a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8M18 31v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-8"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 2l8 3.5V11c0 5-3.4 8.7-8 10-4.6-1.3-8-5-8-10V5.5L12 2z"/><path d="M9 12l2 2 4-4"/></symbol>
+    <symbol id="i-thread" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M7 8c2 2 2 6 0 8M17 8c-2 2-2 6 0 8"/></symbol>
+    <symbol id="i-truck" viewBox="0 0 24 24"><path d="M2 6h12v10H2zM14 10h4l4 3v3h-8z"/><circle cx="6.5" cy="18" r="1.6"/><circle cx="17.5" cy="18" r="1.6"/></symbol>
+    <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M4 20c0-8 6-14 16-16-2 10-8 16-16 16z"/><path d="M4 20c3-4 7-7 12-9"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.7 6.9L12 17.3 5.7 20.8l1.7-6.9L2 9.2l7.1-.6L12 2z" fill="currentColor" stroke="none"/></symbol>
+    <symbol id="i-camera" viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="14" rx="3"/><circle cx="12" cy="13" r="4"/><path d="M8 6l1.5-2h5L16 6"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 2a6 6 0 0 0-6 6c0 5 6 14 6 14s6-9 6-14a6 6 0 0 0-6-6z"/><circle cx="12" cy="8" r="2"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M10 8.5l6 3.5-6 3.5z" fill="currentColor" stroke="none"/></symbol>
+  </defs>
+</svg>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="siteHeader">
+  <div class="wrap nav-row">
+    <a href="#main" class="logo">Op<span>en</span>n</a>
+
+    <nav aria-label="Primary">
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#wallets">Wallets</a></li>
+        <li><a href="#collection">Collection</a></li>
+        <li><a href="#craft">Craft</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav-cta">
+      <a href="#collection" class="btn btn-outline">Find Your Fit</a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" aria-labelledby="hero-heading">
+    <div class="hero-glow" aria-hidden="true"></div>
+    <div class="hero-beams" aria-hidden="true"></div>
+
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">Openn — everyday carry</p>
+        <h1 id="hero-heading">Open<br><em>every day.</em></h1>
+        <p class="lead">Slim wallets and small leather goods, cut from navy ballistic weave and finished with a brushed suede band — built for the pocket you reach for first.</p>
+
+        <div class="hero-ctas">
+          <a href="#wallets" class="btn btn-primary">Shop Wallets <svg class="btn-arrow" width="16" height="16"><use href="#i-arrow"/></svg></a>
+          <a href="#collection" class="btn btn-outline">See the Collection</a>
+        </div>
+
+        <ul class="hero-meta">
+          <li><svg><use href="#i-shield"/></svg> RFID-shielded</li>
+          <li><svg><use href="#i-thread"/></svg> Lifetime stitching</li>
+          <li><svg><use href="#i-truck"/></svg> Ships in 48h</li>
+        </ul>
+      </div>
+
+      <div class="hero-art">
+        <div class="hero-frame" id="heroFrame">
+          <picture>
+            <source srcset="assets/wallet-hero.jpg" type="image/webp">
+            <img src="assets/wallet-hero.jpg" alt="Openn navy ballistic-weave wallet with a brushed grey suede center band and embossed logo, standing upright against a dark studio backdrop." width="1254" height="1254" loading="eager" fetchpriority="high">
+          </picture>
+          <span class="hero-tag"><span class="dot" aria-hidden="true"></span> Ballistic Weave &amp; Suede</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FEATURE BAND ============ -->
+  <div class="band">
+    <div class="wrap band-row">
+      <div class="band-item"><svg><use href="#i-leaf"/></svg> Full-grain &amp; ballistic weave</div>
+      <div class="band-item"><svg><use href="#i-shield"/></svg> RFID-shielding, every slot</div>
+      <div class="band-item"><svg><use href="#i-thread"/></svg> Lifetime stitch guarantee</div>
+      <div class="band-item"><svg><use href="#i-truck"/></svg> Free shipping over $75</div>
+    </div>
+  </div>
+
+  <!-- ============ FLAGSHIP — WALLETS ============ -->
+  <section class="flagship" id="wallets" aria-labelledby="flagship-heading">
+    <div class="wrap flagship-grid">
+      <div class="flagship-art">
+        <div class="zoom-frame" id="zoomFrame">
+          <picture>
+            <source srcset="assets/wallet-hero.jpg" type="image/webp">
+            <img src="wallet-hero.jpg" alt="Close view of the Openn wallet showing the stitched suede band, embossed logo and card slot edge." width="1254" height="1254" loading="lazy">
+          </picture>
+        </div>
+      </div>
+
+      <div class="flagship-copy reveal">
+        <p class="flagship-num">01 — Flagship</p>
+        <h2 id="flagship-heading">The Openn Wallet</h2>
+        <p>Six card slots and one bill pocket, cut under 9mm thick from the same navy ballistic weave and brushed suede band you see here — edge-stitched by hand and finished with a matte embossed mark.</p>
+
+        <dl class="spec-list">
+          <div><dt>Material</dt><dd>Ballistic weave &amp; suede</dd></div>
+          <div><dt>Capacity</dt><dd>6 cards + cash</dd></div>
+          <div><dt>Profile</dt><dd>8.6mm empty</dd></div>
+          <div><dt>Protection</dt><dd>RFID-shielded</dd></div>
+        </dl>
+
+        <div class="flagship-buy">
+          <p class="price">$68<span>Free shipping over $75</span></p>
+          <a href="#" class="btn btn-primary">Shop Wallets <svg class="btn-arrow" width="16" height="16"><use href="#i-arrow"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COLLECTION GRID ============ -->
+  <section class="collection" id="collection" aria-labelledby="collection-heading">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">The full carry — 02–06</p>
+        <h2 id="collection-heading">Everything that leaves the house with you.</h2>
+        <p>Same two materials. Same hand stitch. Cut for every pocket, wrist and passport.</p>
+      </div>
+
+      <div class="collection-grid">
+        <a class="card reveal" href="#" style="--i:0">
+          <span class="card-band" aria-hidden="true"></span>
+          <span class="card-icon"><svg><use href="#i-card"/></svg></span>
+          <h3>Card Holders</h3>
+          <p>Four slots, RFID-shielded, cut to sit flat in a front pocket.</p>
+          <span class="card-link">Shop Card Holders <svg><use href="#i-arrow"/></svg></span>
+        </a>
+
+        <a class="card reveal" href="#" style="--i:1">
+          <span class="card-band" aria-hidden="true"></span>
+          <span class="card-icon"><svg><use href="#i-belt"/></svg></span>
+          <h3>Belts</h3>
+          <p>Full-grain strap with a solid brass buckle, sized to the half-inch.</p>
+          <span class="card-link">Shop Belts <svg><use href="#i-arrow"/></svg></span>
+        </a>
+
+        <a class="card reveal" href="#" style="--i:2">
+          <span class="card-band" aria-hidden="true"></span>
+          <span class="card-icon"><svg><use href="#i-keychain"/></svg></span>
+          <h3>Keychains</h3>
+          <p>A ring, a loop, and a tab cut from the same weave as your wallet.</p>
+          <span class="card-link">Shop Keychains <svg><use href="#i-arrow"/></svg></span>
+        </a>
+
+        <a class="card reveal" href="#" style="--i:3">
+          <span class="card-band" aria-hidden="true"></span>
+          <span class="card-icon"><svg><use href="#i-passport"/></svg></span>
+          <h3>Passport Holders</h3>
+          <p>Room for your passport, boarding pass, and two cards.</p>
+          <span class="card-link">Shop Passport Holders <svg><use href="#i-arrow"/></svg></span>
+        </a>
+
+        <a class="card reveal" href="#" style="--i:4">
+          <span class="card-band" aria-hidden="true"></span>
+          <span class="card-icon"><svg><use href="#i-watch"/></svg></span>
+          <h3>Watch Straps</h3>
+          <p>Quick-release leather and canvas straps, 20mm and 22mm.</p>
+          <span class="card-link">Shop Watch Straps <svg><use href="#i-arrow"/></svg></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CRAFT / MATERIALS ============ -->
+  <section class="craft" id="craft" aria-labelledby="craft-heading">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Materials</p>
+        <h2 id="craft-heading">Two materials. No compromises.</h2>
+        <p>Everything in the Openn line is cut from the same pairing you see on the wallet above.</p>
+      </div>
+
+      <div class="craft-grid">
+        <div class="swatch reveal">
+          <div class="swatch-tile weave" aria-hidden="true"></div>
+          <h3>Ballistic-weave canvas</h3>
+          <p>A tight cross-hatch nylon weave, coated for water resistance and abrasion — the same shell used on the outer panels of every wallet, card holder and passport case.</p>
+        </div>
+        <div class="swatch reveal">
+          <div class="swatch-tile suede" aria-hidden="true"></div>
+          <h3>Brushed suede band</h3>
+          <p>A soft, matte suede strip anchors the center of every piece, stitched at both edges and embossed with the Openn mark.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIALS ============ -->
+  <section class="reviews" id="reviews" aria-labelledby="reviews-heading">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Reviews</p>
+        <h2 id="reviews-heading">Carried daily, by people who count their cards.</h2>
+      </div>
+
+      <div class="reviews-grid">
+        <div class="review reveal" style="--i:0">
+          <div class="review-stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div>
+          <p>"Slimmest wallet I've owned that still holds everything I actually carry."</p>
+          <cite>J. R. — verified buyer</cite>
+        </div>
+        <div class="review reveal" style="--i:1">
+          <div class="review-stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div>
+          <p>"The stitching on the band is next level. Two years in and it's still tight."</p>
+          <cite>M. A. — verified buyer</cite>
+        </div>
+        <div class="review reveal" style="--i:2">
+          <div class="review-stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div>
+          <p>"Ordered the wallet, came back a month later for the passport holder."</p>
+          <cite>S. K. — verified buyer</cite>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA BANNER ============ -->
+  <div class="wrap">
+    <div class="cta-banner reveal">
+      <h2>Find the piece that opens with you.</h2>
+      <p>New drops monthly. Same two materials, same hand stitch.</p>
+      <a href="#collection" class="btn btn-primary">Shop the Collection <svg class="btn-arrow" width="16" height="16"><use href="#i-arrow"/></svg></a>
+    </div>
+  </div>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#main" class="logo">Op<span>en</span>n</a>
+        <p>Slim leather goods and ballistic-weave everyday carry, cut and stitched for the pocket you reach for first.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Openn on Instagram"><svg><use href="#i-camera"/></svg></a>
+          <a href="#" aria-label="Openn on Pinterest"><svg><use href="#i-pin"/></svg></a>
+          <a href="#" aria-label="Openn on TikTok"><svg><use href="#i-play"/></svg></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="#wallets">Wallets</a></li>
+          <li><a href="#collection">Card Holders</a></li>
+          <li><a href="#collection">Belts</a></li>
+          <li><a href="#collection">Keychains</a></li>
+          <li><a href="#collection">Passport Holders</a></li>
+          <li><a href="#collection">Watch Straps</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#craft">Craft &amp; Materials</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#">Journal</a></li>
+          <li><a href="#">Sustainability</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="#">Shipping &amp; Returns</a></li>
+          <li><a href="#">Size Guide</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Warranty</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Openn. All rights reserved.</p>
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* =========================================================
+   OPENN — interactions
+   ========================================================= */
+(function () {
+  "use strict";
+
+  var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  /* ---------- Sticky header ---------- */
+  var header = document.getElementById("siteHeader");
+  var lastScrolled = false;
+  function onScroll() {
+    var scrolled = window.scrollY > 30;
+    if (scrolled !== lastScrolled) {
+      header.classList.toggle("is-scrolled", scrolled);
+      lastScrolled = scrolled;
+    }
+  }
+  window.addEventListener("scroll", onScroll, { passive: true });
+  onScroll();
+
+  /* ---------- Mobile nav toggle ---------- */
+  var navToggle = document.getElementById("navToggle");
+  var navMenu = document.getElementById("navMenu");
+
+  function closeMenu() {
+    navMenu.classList.remove("is-open");
+    navToggle.setAttribute("aria-expanded", "false");
+  }
+  function toggleMenu() {
+    var open = navMenu.classList.toggle("is-open");
+    navToggle.setAttribute("aria-expanded", open ? "true" : "false");
+  }
+
+  navToggle.addEventListener("click", toggleMenu);
+  navMenu.addEventListener("click", function (e) {
+    if (e.target.tagName === "A") closeMenu();
+  });
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") closeMenu();
+  });
+
+  /* ---------- Scroll reveal ---------- */
+  var revealEls = document.querySelectorAll(".reveal");
+  if (reduceMotion || !("IntersectionObserver" in window)) {
+    revealEls.forEach(function (el) { el.classList.add("in-view"); });
+  } else {
+    var io = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("in-view");
+            io.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.15, rootMargin: "0px 0px -60px 0px" }
+    );
+    revealEls.forEach(function (el) { io.observe(el); });
+  }
+
+  /* ---------- Hero product tilt ---------- */
+  var heroFrame = document.getElementById("heroFrame");
+  var pointerFine = window.matchMedia("(pointer: fine)").matches;
+
+  if (heroFrame && pointerFine && !reduceMotion) {
+    var rafId = null;
+
+    heroFrame.addEventListener("mousemove", function (e) {
+      var rect = heroFrame.getBoundingClientRect();
+      var x = (e.clientX - rect.left) / rect.width;   // 0 → 1
+      var y = (e.clientY - rect.top) / rect.height;   // 0 → 1
+      var rotateY = (x - 0.5) * 14;
+      var rotateX = (0.5 - y) * 14;
+
+      if (rafId) cancelAnimationFrame(rafId);
+      rafId = requestAnimationFrame(function () {
+        heroFrame.style.transform =
+          "perspective(1200px) rotateX(" + rotateX + "deg) rotateY(" + rotateY + "deg) scale(1.02)";
+      });
+    });
+
+    heroFrame.addEventListener("mouseleave", function () {
+      if (rafId) cancelAnimationFrame(rafId);
+      heroFrame.style.transform = "perspective(1200px) rotateX(0deg) rotateY(0deg) scale(1)";
+    });
+  }
+
+  /* ---------- Flagship magnifier ---------- */
+  var zoomFrame = document.getElementById("zoomFrame");
+  if (zoomFrame) {
+    zoomFrame.addEventListener("mousemove", function (e) {
+      var rect = zoomFrame.getBoundingClientRect();
+      var ox = ((e.clientX - rect.left) / rect.width) * 100;
+      var oy = ((e.clientY - rect.top) / rect.height) * 100;
+      zoomFrame.style.setProperty("--ox", ox + "%");
+      zoomFrame.style.setProperty("--oy", oy + "%");
+    });
+  }
+
+  /* ---------- Cursor-follow glow on collection cards ---------- */
+  var cards = document.querySelectorAll(".card");
+  cards.forEach(function (card) {
+    card.addEventListener("mousemove", function (e) {
+      var rect = card.getBoundingClientRect();
+      var mx = ((e.clientX - rect.left) / rect.width) * 100;
+      var my = ((e.clientY - rect.top) / rect.height) * 100;
+      card.style.setProperty("--mx", mx + "%");
+      card.style.setProperty("--my", my + "%");
+    });
+  });
+
+  /* ---------- Material swatch tap toggle (touch parity) ---------- */
+  var swatches = document.querySelectorAll(".swatch");
+  swatches.forEach(function (swatch) {
+    swatch.addEventListener("click", function () {
+      swatches.forEach(function (s) { if (s !== swatch) s.classList.remove("is-active"); });
+      swatch.classList.toggle("is-active");
+    });
+  });
+})();
+
+</script>
+</body>
+</html>
